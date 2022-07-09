@@ -97,16 +97,42 @@
 // console.log(arr3)
 
 // 配列のコピー、結合
-const arr4 = [10, 20];
-const arr5 = [30, 40];
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
 
-const arr6 = [...arr4]; // ディープコピーができる
-console.log(arr6);
-const arr7 = arr4; // これはアドレスコピー
-console.log(arr7);
-arr4[0] = 50;
-console.log("arr6:" + arr6);
-console.log("arr7:" + arr7);
+// const arr6 = [...arr4]; // ディープコピーができる
+// console.log(arr6);
+// const arr7 = arr4; // これはアドレスコピー
+// console.log(arr7);
+// arr4[0] = 50;
+// console.log("arr6:" + arr6);
+// console.log("arr7:" + arr7);
 
-const arr8 = [...arr4, ...arr5];
-console.log(...arr8);
+// const arr8 = [...arr4, ...arr5];
+// console.log(...arr8);
+
+
+// 配列、map
+// const nameArr = ["endo", "sato", "tanaka"];
+// for (let i=0; i<nameArr.length; i++) {
+//   console.log(`${i+1}番目は${nameArr[i]}さんです`);
+// }
+
+// これはそのまま返しているだけ
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+
+// nameArr.map((name, index)=>console.log(`${index + 1}番目は${name}さんです`))
+
+// const numArr = [1,2,3,4,5];
+// const newNumArr = numArr.filter((num)=>{
+//   return num % 2 === 1;
+// })
+// console.log(newNumArr);
+
+const flag = false;
+const fee = flag || null;
+console.log(fee);
+
